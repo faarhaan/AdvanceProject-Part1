@@ -11,8 +11,6 @@ namespace NUnit_Project.Utilities
     public class CommonDriver
     {
         public static IWebDriver driver;
-        // Protected driver instance accessible in derived classes
-       // protected IWebDriver driver;
 
         [TearDown]
         public void CloseTestrun()
@@ -23,11 +21,7 @@ namespace NUnit_Project.Utilities
                 // Navigate to the project directory
                 var projectDir = Path.Combine(AppContext.BaseDirectory, "..", "..", "..");
                 var screenshotDir = Path.Combine(projectDir, "Screenshots");
-                /*
-                                // Use the project directory instead of the runtime directory
-                                // Get the project directory explicitly
-                                //string projectDirectory = AppContext.BaseDirectory; // This points to the runtime directory.
-                                //projectDirectory = Path.GetFullPath(Path.Combine(projectDirectory, @"..\..\..\")); // Navigate to the project root.*/
+                
 
                 // Create the Screenshots directory if it doesn't exist
                 if (!Directory.Exists(screenshotDir))
