@@ -62,17 +62,17 @@ bld/
 Generated\ Files/
 
 # MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-*.trx
+#[Tt]est[Rr]esult*/
+#[Bb]uild[Ll]og.*
+#*.trx
 
 # NUnit
-*.VisualState.xml
-TestResult.xml
-nunit-*.xml
+#*.VisualState.xml
+#TestResult.xml
+#nunit-*.xml
 
 # Approval Tests result files
-*.received.*
+#*.received.*
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
